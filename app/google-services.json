@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "332921501829",
+    "project_id": "loaytaskmanager2",
+    "storage_bucket": "loaytaskmanager2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332921501829:android:7861878fec01c30e1651ec",
+        "android_client_info": {
+          "package_name": "loay.sholy.loaytaskmanager2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332921501829-irpbnngfdoqernnfkcd90orcj72p2qrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATmnClUScG9tDBm0kW0LrkEGRAbuT39bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332921501829-irpbnngfdoqernnfkcd90orcj72p2qrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
