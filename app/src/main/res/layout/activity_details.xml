@@ -129,8 +129,8 @@
         android:id="@+id/eTserving"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="4dp"
         android:text="Serving size:"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/etLine"
@@ -182,5 +182,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/etLine"
         app:layout_constraintStart_toStartOf="@+id/etValue" />
+
+    <TextView
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="3dp"
+        android:text="Product name:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etLine"
+        app:layout_constraintStart_toStartOf="@+id/etLine" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
