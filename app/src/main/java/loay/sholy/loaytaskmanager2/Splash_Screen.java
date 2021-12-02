@@ -24,7 +24,7 @@ public class Splash_Screen extends AppCompatActivity {
                 int ms =3*1000;
                 try {
                     sleep(ms);
-                    startActivity(new Intent(getApplicationContext(),MainActivity.class));// transfers from splash screen to main activity page.
+                    startActivity(new Intent(getApplicationContext(),Sign_up.class));// transfers from splash screen to main activity page.
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
