@@ -29,5 +29,6 @@ public class Details extends AppCompatActivity {
         etCalcium=findViewById(R.id.etCalcium);
         etIron=findViewById(R.id.etIron);
         etName=findViewById(R.id.etName);
+
     }
 }

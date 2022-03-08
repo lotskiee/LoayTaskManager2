@@ -9,19 +9,15 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/TextInputLayout21"
+        android:layout_height="33dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TextInputLayout21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout4"
         tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etLastname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Last name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -29,57 +25,38 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="19dp"
-        android:layout_marginBottom="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/etFirstname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etFirstname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="First name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TextInputLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="26dp"
-        app:layout_constraintBottom_toTopOf="@+id/TextInputEditText"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/etGmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextInputLayout21"
         tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="password"
-            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TextInputEditText"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="38dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnCreate"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/etGmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/etGmail"
         tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etConfirmpassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirm password"
-            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -91,15 +68,8 @@
         app:layout_constraintBottom_toTopOf="@+id/TextInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstname"
         tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etGmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:inputType="textWebEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,11 +77,69 @@
         android:id="@+id/btnCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="373dp"
+        android:layout_marginBottom="162dp"
         android:text="Create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextInputEditText"
+        app:layout_constraintTop_toBottomOf="@+id/etConfirmpassword"
         tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etConfirmpassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/etConfirmpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGmail" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etGmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:hint="Username"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLayout" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etLastname"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Last name"
+        app:layout_constraintBottom_toBottomOf="@+id/TextInputEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstname" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etFirstname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="First name"
+        app:layout_constraintBottom_toTopOf="@+id/TextInputLayout21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

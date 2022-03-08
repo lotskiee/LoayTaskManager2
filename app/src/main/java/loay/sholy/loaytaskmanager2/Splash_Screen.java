@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Splash_Screen extends AppCompatActivity {
     private ImageView imgSplash;
 
@@ -24,7 +26,12 @@ public class Splash_Screen extends AppCompatActivity {
                 int ms =3*1000;
                 try {
                     sleep(ms);
-                    startActivity(new Intent(getApplicationContext(),Sign_up.class));// transfers from splash screen to main activity page.
+                    // فحص هل تم الدخول مسبقا
+                    FirebaseAuth auth=FirebaseAuth.getInstance();
+                    if (auth.getCurrentUser()!=null)
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));// transfers from splash screen to main activity page.
+                    else
+                        startActivity(new Intent(getApplicationContext(),Sign_in.class));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

@@ -7,34 +7,48 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/ETbtnprev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="102dp"
-        android:text="Previous picture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ETbtnpictake" />
-
-    <Button
         android:id="@+id/ETbtnfav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginBottom="182dp"
         android:text="Favorite "
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ETbtnprev" />
+        app:layout_constraintTop_toBottomOf="@+id/iv" />
 
+    <?xml version="1.0" encoding="utf-8"?>
     <Button
-        android:id="@+id/ETbtnpictake"
+        android:id="@+id/btncapimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="211dp"
-        android:layout_marginEnd="128dp"
-        android:text="Take pictutre"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center_horizontal"
+        android:text="Capture image"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnselectimg" />
+
+    <Button
+        android:id="@+id/btnselectimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:text="image from gallery"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnselectimg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
